@@ -286,4 +286,3 @@ struct AppColors {
 #Preview {
     HabitList()
 }
-
