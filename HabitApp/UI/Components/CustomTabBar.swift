@@ -39,12 +39,8 @@ struct CustomTabBar: View {
                         }
                 }
             }
-//            .opacity(0.1)
-            //.padding(.bottom, 0)
             .ignoresSafeArea(.all, edges: .bottom)
         }
-        //.ignoresSafeArea(.all, edges: .bottom)
-        //.background(Color.yellow)
     }
 }
 

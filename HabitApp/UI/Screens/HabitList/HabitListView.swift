@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HabitList.swift
 //  HabitApp
 //
 //  Created by Thang Le on 24/11/25.
@@ -15,7 +15,7 @@ struct Task: Identifiable {
 }
 
 // MARK: - Main View
-struct ContentView: View {
+struct HabitList: View {
     @State private var tasks = [
         Task(title: "Read 10 pages of a book", isCompleted: true),
         Task(title: "Meditated for 5 minutes", isCompleted: true),
@@ -284,6 +284,6 @@ struct AppColors {
 }
 
 #Preview {
-    ContentView()
+    HabitList()
 }
 
