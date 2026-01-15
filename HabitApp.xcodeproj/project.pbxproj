@@ -6,8 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		02963F412F1807C90096409F /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 02963F402F1807C90096409F /* Auth */; };
+		02963F432F1807C90096409F /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 02963F422F1807C90096409F /* Functions */; };
+		02963F452F1807C90096409F /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 02963F442F1807C90096409F /* PostgREST */; };
+		02963F472F1807C90096409F /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 02963F462F1807C90096409F /* Realtime */; };
+		02963F492F1807C90096409F /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 02963F482F1807C90096409F /* Storage */; };
+		02963F4D2F180ECC0096409F /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 02963F4C2F180ECC0096409F /* Supabase */; };
+		927B4AEF873718294A82048E /* Pods_HabitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D490BA70ACA4A2C50A72280 /* Pods_HabitApp.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		02A31CE92ED554A3008E7D65 /* HabitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A487CE0B00905F841F50053 /* Pods-HabitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitApp.release.xcconfig"; path = "Target Support Files/Pods-HabitApp/Pods-HabitApp.release.xcconfig"; sourceTree = "<group>"; };
+		3D490BA70ACA4A2C50A72280 /* Pods_HabitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E721114C4204F53408658DC3 /* Pods-HabitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitApp.debug.xcconfig"; path = "Target Support Files/Pods-HabitApp/Pods-HabitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +36,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02963F4D2F180ECC0096409F /* Supabase in Frameworks */,
+				02963F492F1807C90096409F /* Storage in Frameworks */,
+				02963F452F1807C90096409F /* PostgREST in Frameworks */,
+				02963F432F1807C90096409F /* Functions in Frameworks */,
+				02963F412F1807C90096409F /* Auth in Frameworks */,
+				02963F472F1807C90096409F /* Realtime in Frameworks */,
+				927B4AEF873718294A82048E /* Pods_HabitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +54,8 @@
 			children = (
 				02A31CEB2ED554A3008E7D65 /* HabitApp */,
 				02A31CEA2ED554A3008E7D65 /* Products */,
+				68D111276E736C6F838DE7D7 /* Pods */,
+				73C8A14075FF1CF7ADAC9DA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +67,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		68D111276E736C6F838DE7D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E721114C4204F53408658DC3 /* Pods-HabitApp.debug.xcconfig */,
+				2A487CE0B00905F841F50053 /* Pods-HabitApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73C8A14075FF1CF7ADAC9DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D490BA70ACA4A2C50A72280 /* Pods_HabitApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,6 +91,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02A31CF82ED554A5008E7D65 /* Build configuration list for PBXNativeTarget "HabitApp" */;
 			buildPhases = (
+				0CBEFBCA159C73285D996763 /* [CP] Check Pods Manifest.lock */,
 				02A31CE52ED554A3008E7D65 /* Sources */,
 				02A31CE62ED554A3008E7D65 /* Frameworks */,
 				02A31CE72ED554A3008E7D65 /* Resources */,
@@ -64,8 +104,6 @@
 				02A31CEB2ED554A3008E7D65 /* HabitApp */,
 			);
 			name = HabitApp;
-			packageProductDependencies = (
-			);
 			productName = HabitApp;
 			productReference = 02A31CE92ED554A3008E7D65 /* HabitApp.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +132,9 @@
 			);
 			mainGroup = 02A31CE02ED554A3008E7D65;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 02A31CEA2ED554A3008E7D65 /* Products */;
 			projectDirPath = "";
@@ -113,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CBEFBCA159C73285D996763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02A31CE52ED554A3008E7D65 /* Sources */ = {
@@ -241,6 +307,7 @@
 		};
 		02A31CF92ED554A5008E7D65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E721114C4204F53408658DC3 /* Pods-HabitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -278,6 +345,7 @@
 		};
 		02A31CFA2ED554A5008E7D65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A487CE0B00905F841F50053 /* Pods-HabitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,6 +403,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02963F402F1807C90096409F /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		02963F422F1807C90096409F /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		02963F442F1807C90096409F /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		02963F462F1807C90096409F /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		02963F482F1807C90096409F /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		02963F4C2F180ECC0096409F /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02963F3F2F1807C90096409F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02A31CE12ED554A3008E7D65 /* Project object */;
 }

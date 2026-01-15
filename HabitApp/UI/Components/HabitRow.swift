@@ -12,10 +12,10 @@ struct HabitRow: View {
     
     var body: some View {
         HStack {
-            Text(habit.title)
+            Text(habit.name)
                 .foregroundStyle(Color.purple)
             Spacer()
-            Checkbox(isDone: habit.isCompleted)
+            Checkbox(isDone: true)
         }
     }
 }

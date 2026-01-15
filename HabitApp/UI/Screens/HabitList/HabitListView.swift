@@ -49,27 +49,27 @@ struct HabitList: View {
         .accentColor(AppColors.navigationIcon)
         .onAppear {
             let appearance = UITabBarAppearance()
-                        appearance.configureWithOpaqueBackground()
-                        appearance.backgroundColor = UIColor.black
-                        
-                        // Remove labels and customize icon colors
-                        let itemAppearance = UITabBarItemAppearance()
-                        itemAppearance.normal.iconColor = UIColor(AppColors.navigationIcon)
-                        itemAppearance.selected.iconColor = UIColor(AppColors.navigationIcon)
-                        
-                        // Hide titles
-                        itemAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.clear]
-                        itemAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.clear]
-                        
-                        appearance.stackedLayoutAppearance = itemAppearance
-                        appearance.inlineLayoutAppearance = itemAppearance
-                        appearance.compactInlineLayoutAppearance = itemAppearance
-                        
-                        UITabBar.appearance().standardAppearance = appearance
-                        UITabBar.appearance().scrollEdgeAppearance = appearance
-                        
-                        // Increase tab bar height
-                        UITabBar.appearance().frame.size.height = 80
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.black
+            
+            // Remove labels and customize icon colors
+            let itemAppearance = UITabBarItemAppearance()
+            itemAppearance.normal.iconColor = UIColor(AppColors.navigationIcon)
+            itemAppearance.selected.iconColor = UIColor(AppColors.navigationIcon)
+            
+            // Hide titles
+            itemAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.clear]
+            itemAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.clear]
+            
+            appearance.stackedLayoutAppearance = itemAppearance
+            appearance.inlineLayoutAppearance = itemAppearance
+            appearance.compactInlineLayoutAppearance = itemAppearance
+            
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+            
+            // Increase tab bar height
+            UITabBar.appearance().frame.size.height = 80
         }
     }
 }
