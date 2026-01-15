@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct Habit: Identifiable {
-    let id = UUID()
-    let title: String
-    let isCompleted: Bool
+struct Habit: Identifiable, Codable {
+    let id: UUID
+    let name: String
+    let createdAt: Date
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case createdAt = "created_at"
+    }
 }
